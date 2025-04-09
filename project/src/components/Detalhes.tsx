@@ -49,13 +49,13 @@ const dados = [
     tipo: 'Curso',
     nome: 'Design de Sobrancelhas Especialização',
     descricao: 'Aprofunde seus conhecimentos com técnicas avançadas e prática profissional.',
-    imagem: 'https://images.unsplash.com/photo-15169750804-ed2fc6a32937?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/CursoEspecia.jpeg'
   },
   {
     tipo: 'Curso',
     nome: 'Micropigmentação 3x1 Iniciantes',
     descricao: 'Domine as técnicas essenciais para atuar na área de micropigmentação.',
-    imagem: 'https://images.unsplash.com/photo-1556227861-4667e9f96a38?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/CursoMicropig.jpeg'
   },
   {
     tipo: 'Curso',
