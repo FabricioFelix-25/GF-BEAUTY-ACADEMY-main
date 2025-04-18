@@ -1,3 +1,3 @@
-<<<<<<< HEAD
-![image](https://github.com/user-attachments/assets/4578f201-8ba3-4dcd-99a5-b0fa173beba6)
+
 =======
+![imagem_redimensionada_1227x925](https://github.com/user-attachments/assets/991fc3dc-e8f9-4c04-9a92-ec11861e5ffc)
