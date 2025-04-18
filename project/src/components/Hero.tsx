@@ -1,10 +1,9 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+{/*import { ChevronLeft, ChevronRight } from 'lucide-react';*/}
 
 const Hero = () => {
   const slides = [
-    'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80',
+      '/imagens/imagem_redimensionada_1227x925.jpg',
+
   ];
 
   return (
@@ -45,12 +44,12 @@ const Hero = () => {
   
 </div>
 
-      <button className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
+      {/*<button className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
         <ChevronLeft className="h-6 w-6 text-caramelo" />
       </button>
       <button className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
         <ChevronRight className="h-6 w-6 text-caramelo" />
-      </button>
+      </button>*/}
     </section>
   );
 };
