@@ -1,3 +1,2 @@
 
-=======
-![imagem_redimensionada_1227x925](https://github.com/user-attachments/assets/991fc3dc-e8f9-4c04-9a92-ec11861e5ffc)
+![image](https://github.com/user-attachments/assets/b0d1137b-3940-4672-83d1-9054e3e006c5)
