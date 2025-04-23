@@ -43,7 +43,7 @@ const dados = [
     tipo: 'Curso',
     nome: 'Design de Sobrancelhas Iniciantes',
     descricao: 'Curso introdutório para quem deseja aprender técnicas básicas de design de sobrancelhas.',
-    imagem: 'https://images.unsplash.com/photo-15223373788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/cursoDesignIniciante.png'
   },
   {
     tipo: 'Curso',
@@ -61,19 +61,19 @@ const dados = [
     tipo: 'Curso',
     nome: 'Micropigmentação Especialização em Shadignline',
     descricao: 'Especialização com foco na técnica de Shadignline, voltada para profissionais.',
-    imagem: 'https://images.unsplash.com/photo-1599577180982-f7ef625aa4ac?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/CursoEspecShadigline.png'
   },
   {
     tipo: 'Curso',
     nome: 'Micropigmentação Especialização VIP - 1 técnicas',
     descricao: 'Aprimore-se em técnicas exclusivas de micropigmentação com atendimento VIP.',
-    imagem: 'https://images.unsplash.com/photo-1535909339361-3c46950e37c3?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/CursoEspecVip.png'
   },
   {
     tipo: 'Curso',
     nome: 'Extensão de Cílios + Bônus',
     descricao: 'Aprenda a aplicar extensão de cílios com técnicas modernas e conteúdos extras.',
-    imagem: 'https://images.unsplash.com/photo-1573497019134-318abdfdcdf3?auto=format&fit=crop&w=800&q=80'
+    imagem: '/imagens/CursoCilios.png'
   }
 ];
 
