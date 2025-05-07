@@ -4,17 +4,17 @@ const services = [
   {
     category: 'Sobrancelhas',
     items: [
-      { name: 'Micropigmentação de Sobrancelhas', price: 'R$ 500' },
-      { name: 'Brows Lamination', price: 'R$ 150' },
-      { name: 'Remoção a Laser', price: 'R$ 70' },
-      { name: 'Extensão de Cílios', price: 'R$ 70' },
-      { name: 'Design Personalizado', price: 'R$ 80' },
+      { name: 'Micropigmentação de Sobrancelhas' },
+      { name: 'Brows Lamination' },
+      { name: 'Remoção a Laser' },
+      { name: 'Extensão de Cílios' },
+      { name: 'Design Personalizado' },
     ]
   },
   {
     category: 'Lábios',
     items: [
-      { name: 'Micropigmentação Labial', price: 'R$ 100' },
+      { name: 'Micropigmentação Labial' },
     ]
   },
 ];
@@ -23,18 +23,17 @@ const Services = () => {
   return (
     <section id="servicos" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Nossos Serviços</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 justify-center">
 
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4">{service.category}</h3>
-                <ul className="space-y-4">
+                <h3 className="text-2xl font-semibold mb-4 text-[#CDAEAE] border-b-2 border-[#CDAEAE]">{service.category}</h3>
+                <ul className="space-y-6">
                   {service.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex justify-between items-center">
-                      <span>{item.name}</span>
-                      <span className="text-pink-600 font-semibold">{item.price}</span>
+                    <li key={itemIndex} className="flex justify-between items-center text-lg text-gray-700">
+                      <span className="font-bold">{item.name}</span>  {/* Adicionando negrito */}
                     </li>
                   ))}
                 </ul>
