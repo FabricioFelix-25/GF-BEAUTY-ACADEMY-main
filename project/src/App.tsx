@@ -3,7 +3,7 @@ import { Phone, Instagram, Facebook, Mail, Clock, MapPin, MessageCircle } from '
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import Cursos from './components/Cursos';
+// import Cursos from './components/Cursos';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -17,7 +17,7 @@ function App() {
       <main>
         <Hero />
         <Services />
-        <Cursos />
+        {/* <Cursos /> */}
         <Detalhes />
         <Testimonials />
         <Contact />

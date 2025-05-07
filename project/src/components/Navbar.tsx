@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
   <a href="#inicio" className="text-[#E5A89B] hover:text-pink-600">Início</a>
   <a href="#servicos" className="text-[#E5A89B] hover:text-pink-600">Serviços</a>
-  <a href="#cursos" className="text-[#E5A89B] hover:text-pink-600">Cursos</a>
+  {/* <a href="#cursos" className="text-[#E5A89B] hover:text-pink-600">Cursos</a> */}
   <a href="#detalhes" className="text-[#E5A89B] hover:text-pink-600">Detalhes</a>
   <a href="#depoimentos" className="text-[#E5A89B] hover:text-pink-600">Depoimentos</a>
   <a href="#contato" className="text-[#E5A89B] hover:text-pink-600">Contato</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="px-2 pt-2 pb-3 space-y-1">
       <a href="#inicio" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Início</a>
       <a href="#servicos" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Serviços</a>
-      <a href="#cursos" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Cursos</a>
+      {/* <a href="#cursos" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Cursos</a> */}
       <a href="#detalhes" className="text-[#E5A89B] hover:text-pink-600">Detalhes</a>
       <a href="#depoimentos" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Depoimentos</a>
       <a href="#contato" className="block px-3 py-2 text-[#E5A89B] hover:text-pink-600">Contato</a>
