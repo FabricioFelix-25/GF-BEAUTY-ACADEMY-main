@@ -4,11 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        begeClaro: '#F5F5DC', // Beige Claro
-        marromEscuro: '#8B4513', // Marrom Escuro
-        caramelo: '#D2691E', // Caramelo
-        textoPrimario: '#4B4B4B', // Texto Primário (para o corpo do texto)
-        textoSecundario: '#A4A4A4', // Texto Secundário
+        dourado: '#b2892b',
+        marrom: '#885822',
+        bege: '#E7E0D8',
+        textoPrimario: '#4B4B4B',
+        textoSecundario: '#A4A4A4',
+      },
+      fontFamily: {
+        gerhona: ['Gerhona', 'serif'],
+        futura: ['FuturaNowHeadline', 'sans-serif'],
       },
     },
   },
