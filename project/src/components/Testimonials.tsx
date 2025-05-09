@@ -1,3 +1,4 @@
+// Testimonials.tsx
 import React from 'react';
 import { Star } from 'lucide-react';
 
@@ -9,7 +10,7 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      name: 'Gabriela Galindo',  
+      name: 'Gabriela Galindo',
       text: 'Atendimento 5 estrelas sempre! Giselle e toda equipe são excelentes, sempre muito atenciosas e dispostas a fazer o melhor por cada cliente. Recomendo pra todo mundo.',
       rating: 5
     },
@@ -21,9 +22,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-gray-50">
+    <section id="depoimentos" className="py-20 bg-bege">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Depoimentos</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-marrom">Depoimentos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -32,8 +33,8 @@ const Testimonials = () => {
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
-              <p className="font-semibold text-gray-800">{testimonial.name}</p>
+              <p className="text-textoSecundario mb-4">"{testimonial.text}"</p>
+              <p className="font-semibold text-marrom">{testimonial.name}</p>
             </div>
           ))}
         </div>

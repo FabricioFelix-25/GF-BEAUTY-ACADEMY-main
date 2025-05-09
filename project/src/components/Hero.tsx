@@ -1,13 +1,13 @@
-{/*import { ChevronLeft, ChevronRight } from 'lucide-react';*/}
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   const slides = [
-      '/imagens/imagem_redimensionada_1227x925.jpg',
-
+    '/imagens/imagem_redimensionada_1227x925.jpg',
   ];
 
   return (
     <section id="inicio" className="relative h-screen pt-16">
+      {/* Fundo com imagem */}
       <div className="absolute inset-0">
         <div className="relative h-full">
           {slides.map((slide, index) => (
@@ -25,14 +25,16 @@ const Hero = () => {
       {/* Conteúdo */}
       <div className="relative h-full flex items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Gisele França</h1>
-          <p className="text-xl md:text-2xl mb-8">
+          <h1 className="text-4xl md:text-6xl font-gerhona mb-6 bg-gradient-to-r from-[#b2892b] to-[#f7e37a] bg-clip-text text-transparent">
+            Gisele França
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-textoSecundario font-futura">
             Realce sua beleza natural com nossos tratamentos exclusivos
           </p>
           <div className="flex justify-center">
             <a
               href="#servicos"
-              className="inline-block bg-[#C4A4A4] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#E5A89B] transition-colors"
+              className="inline-block bg-gradient-to-r from-[#b2892b] to-[#f7e37a] text-marrom px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition-colors font-futura"
             >
               Conheça Nossos Serviços
             </a>
@@ -40,16 +42,17 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Ícones de navegação (comentados, caso precise no futuro) */}
+      {/* 
       <div className="flex justify-center mt-4">
-  
-</div>
-
-      {/*<button className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
-        <ChevronLeft className="h-6 w-6 text-caramelo" />
-      </button>
-      <button className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
-        <ChevronRight className="h-6 w-6 text-caramelo" />
-      </button>*/}
+        <button className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
+          <ChevronLeft className="h-6 w-6 text-marrom" />
+        </button>
+        <button className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-90 transition">
+          <ChevronRight className="h-6 w-6 text-marrom" />
+        </button>
+      </div> 
+      */}
     </section>
   );
 };
