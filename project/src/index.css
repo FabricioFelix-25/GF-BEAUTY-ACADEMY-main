@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Gerhona';
+  src: url('/fonts/Gerhona.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaNowHeadline';
+  src: url('/fonts/FuturaNowHeadline.ttf') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply text-gray-800;
+  font-family: 'FuturaNowHeadline', sans-serif;
+  @apply text-textoPrimario bg-bege;
 }
 
 .container {
