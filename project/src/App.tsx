@@ -15,18 +15,17 @@ function App() {
       <main>
         <Hero />
         <Services />
-        <Detalhes />
+        <Detalhes />  
         <Testimonials />
         <Contact />
       </main>
       <WhatsAppButton />
       
-      {/* Novo rodapé integrado à identidade visual */}
       <footer className="bg-bege text-marrom py-10 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Beauty Academy</h3>
+              <h3 className="text-xl font-semibold mb-4">LÊ FRANCE - BEAUTY CONCEPT</h3>
               <p className="text-dourado font-medium">Transformando sua beleza em arte</p>
               <div className="flex space-x-4 mt-4">
                 <a href="#" className="text-marrom hover:text-dourado transition-colors">
