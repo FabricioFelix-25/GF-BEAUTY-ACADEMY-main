@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <img src="/imagens/logo.png" alt="NL Beauty" className="h-24 w-auto" />
-            <span className="text-xl font-bold text-marrom">Gisele França Beauty Academy</span>
+            <span className="text-xl font-bold text-marrom">LÊ FRANCE - BEAUTY CONCEPT</span>
           </div>
 
           <div className="hidden md:flex space-x-8">

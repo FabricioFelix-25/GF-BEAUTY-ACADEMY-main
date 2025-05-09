@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="relative h-full flex items-center justify-center">
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-gerhona mb-6 bg-gradient-to-r from-[#b2892b] to-[#f7e37a] bg-clip-text text-transparent">
-            Gisele França
+            LÊ FRANCE - BEAUTY CONCEPT
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-textoSecundario font-futura">
             Realce sua beleza natural com nossos tratamentos exclusivos
