@@ -1,12 +1,11 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   const slides = [
-    '/imagens/imagem_redimensionada_1227x925.jpg',
+    '/imagens/Lê France_PATTERN.png',
   ];
 
   return (
-    <section id="inicio" className="relative h-screen pt-16">
+    <section id="inicio" className="relative h-[80vh] pt-16">
       {/* Fundo com imagem */}
       <div className="absolute inset-0">
         <div className="relative h-full">
@@ -28,7 +27,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-gerhona mb-6 bg-gradient-to-r from-[#b2892b] to-[#f7e37a] bg-clip-text text-transparent">
             LÊ FRANCE - BEAUTY CONCEPT
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-textoSecundario font-futura">
+          <p className=" font-gerhona mb-6 bg-gradient-to-r from-[#b2892b] to-[#f7e37a] bg-clip-text text-transparent   text-xl md:text-2xl mb-8 text-textoSecundario font-futura">
             Realce sua beleza natural com nossos tratamentos exclusivos
           </p>
           <div className="flex justify-center">
