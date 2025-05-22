@@ -7,7 +7,7 @@ const services = [
       { name: 'Micropigmentação de Sobrancelhas' },
       { name: 'Brows Lamination' },
       { name: 'Remoção a Laser' },
-      { name: 'Extensão de Cílios' },
+      // Removido 'Extensão de Cílios' daqui
       { name: 'Design Personalizado' },
     ]
   },
@@ -17,6 +17,14 @@ const services = [
       { name: 'Micropigmentação Labial' },
     ]
   },
+  { // Nova categoria adicionada
+    category: 'Cílios',
+    items: [
+      { name: 'Extensão de Cílios' }, // Movido para cá
+      { name: 'Lash Lifting' },       // Novo serviço de exemplo
+      { name: 'Remoção de Extensão de Cílios'}, // Novo serviço de exemplo
+    ]
+  },
 ];
 
 const Services = () => {
@@ -24,7 +32,8 @@ const Services = () => {
     <section id="servicos" className="py-20 bg-bege">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-marrom">Nossos Serviços</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12 justify-center">
+        {/* Ajuste opcional para melhor layout com 3 colunas em telas grandes */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="p-6">
