@@ -50,8 +50,51 @@ const courses = [
     },
   ];
 
+
+
+  const servicos = [
+
+    {
+      url: '/imagens/cursoDesignIniciante.png',
+      title: 'Design de Sobrancelhas Iniciantes',
+      description: 'Aprenda técnicas profissionais de design',
+      // price: 'R$ 1.200',
+    },
+    {
+      url: '/imagens/CursoEspecia.jpeg',
+      title: 'Design de Sobrancelhas Especialização',
+      description: 'Do básico ao avançado',
+      // price: 'R$ 1.500',
+    },
+    {
+      url: '/imagens/CursoMicropig.jpeg',
+      title: 'Micropigmentação 3x1 Iniciantes',
+      description: 'Domine as técnicas essenciais para atuar na área.',
+      // price: 'R$ 1.800',
+    },
+    {
+      url: '/imagens/CursoEspecShadigline.png',
+      title: 'Micropigmentação Especialização em Shadignline',
+      description: 'Especialização com foco na técnica de Shadignline',
+      // price: 'R$ 2.500',
+    },
+    {
+      url: '/imagens/CursoEspecVip.png',
+      title: 'Micropigmentação Especialização VIP - 1 técnicas',
+      description: 'Aprimore-se em técnicas exclusivas de micropigmentação com atendimento VIP.',
+      // price: 'R$ 2.500',
+    },
+    {
+      url: '/imagens/CursoCilios.png',
+      title: 'Extensão de Cílios + Bônus',
+      description: 'Aprenda a aplicar extensão de cílios com técnicas modernas e conteúdos extras.',
+      // price: 'R$ 2.500',
+    },
+  ];
+
 const Detalhes = () => {
   const [currentCourseIndex, setCurrentCourseIndex] = useState(0);
+  const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
 
   const prevCourse = () => {
     setCurrentCourseIndex((prevIndex) =>
@@ -64,6 +107,22 @@ const Detalhes = () => {
       prevIndex === courses.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  const prevService = () => {
+    setCurrentServiceIndex((prevIndex) =>
+      prevIndex === 0 ? servicos.length - 1 : prevIndex - 1
+    );
+  };
+
+
+  const nextService = () => {
+    setCurrentServiceIndex((prevIndex) =>
+      prevIndex === servicos.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+
+
 
   return (
     <section id="detalhes" className="py-20 bg-bege px-4">
@@ -121,6 +180,7 @@ const Detalhes = () => {
               </div>
             </div>
           </div>
+          
 
           <button
             onClick={prevCourse}
@@ -142,6 +202,56 @@ const Detalhes = () => {
                 onClick={() => setCurrentCourseIndex(index)}
                 className={`w-2 h-2 rounded-full transition-colors duration-300 ${
                   index === currentCourseIndex ? 'bg-pink-600' : 'bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold text-center mb-12 mt-16">
+          Nossos Serviços
+        </h2>
+        <div className="relative">
+          <div className="overflow-hidden rounded-lg shadow-lg">
+            <div className="relative h-[400px] transition-transform duration-500 ease-out">
+              <img
+                src={servicos[currentServiceIndex].url}
+                alt={servicos[currentServiceIndex].title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">
+                    {servicos[currentServiceIndex].title}
+                  </h3>
+                  <p className="mb-2">{servicos[currentServiceIndex].description}</p>
+                  <p className="text-xl font-semibold">
+                    {/* {courses[currentCourseIndex]} */}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={prevService}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300"
+          >
+            <ChevronLeft className="h-6 w-6 text-white" />
+          </button>
+          <button
+            onClick={nextService}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300"
+          >
+            <ChevronRight className="h-6 w-6 text-white" />
+          </button>
+
+          <div className="flex justify-center mt-4 space-x-2">
+            {courses.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentServiceIndex(index)}
+                className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                  index === currentServiceIndex ? 'bg-pink-600' : 'bg-gray-300'
                 }`}
               />
             ))}
