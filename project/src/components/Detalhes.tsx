@@ -100,9 +100,9 @@ const Detalhes = () => {
         <h2 className="text-3xl font-bold text-center mb-12 mt-16 text-marrom">
           Nossos Cursos
         </h2>
-        <div className="relative">
+        <div className="relative max-w-5xl mx-auto"> {/* Adicionado max-w-5xl mx-auto para consistência */}
           <div className="overflow-hidden rounded-lg shadow-lg">
-            <div className="relative h-[400px] transition-transform duration-500 ease-out">
+            <div className="relative h-[600px] md:h-[700px] transition-transform duration-500 ease-out">
               <img
                 src={courses[currentCourseIndex].url}
                 alt={courses[currentCourseIndex].title}
@@ -125,16 +125,18 @@ const Detalhes = () => {
 
           <button
             onClick={prevCourse}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300"
+            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300 z-10" // Adicionado z-10 e ajuste de posicionamento responsivo
           >
             <ChevronLeft className="h-6 w-6 text-white" />
           </button>
           <button
             onClick={nextCourse}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300"
+            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 p-2 rounded-full transition-colors duration-300 z-10" // Adicionado z-10 e ajuste de posicionamento responsivo
           >
             <ChevronRight className="h-6 w-6 text-white" />
           </button>
+
+          {/* Indicadores de Posição do Carrossel - Estilo atualizado para consistência */}
 
           <div className="flex justify-center mt-4 space-x-2">
             {courses.map((_, index) => (
@@ -142,8 +144,9 @@ const Detalhes = () => {
                 key={index}
                 onClick={() => setCurrentCourseIndex(index)}
                 className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                  index === currentCourseIndex ? 'bg-pink-600' : 'bg-gray-300'
+                  index === currentCourseIndex ? 'bg-dourado scale-125' : 'bg-gray-300 hover:bg-gray-400' // Estilo dos indicadores igual ao Services.tsx
                 }`}
+                aria-label={`Ir para o curso ${index + 1}`} // Adicionado aria-label para acessibilidade
               />
             ))}
           </div>
